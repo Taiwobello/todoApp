@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  /* width: 500px; */
+}
+
+.header h1 {
+  letter-spacing: 5px;
+}
+
+.header img {
+  cursor: pointer;
+}

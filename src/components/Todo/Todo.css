@@ -1,0 +1,51 @@
+.todo {
+  padding: 10px;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid hsl(233, 11%, 84%);
+
+  transition: all 0.3s;
+}
+
+.todoText.done {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.todo:first-child {
+  border-radius: 5px 5px 0 0;
+}
+
+.todoWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todoText {
+  flex-grow: 1;
+  color: hsl(233, 14%, 35%);
+  cursor: pointer;
+}
+
+.removeIcon {
+  cursor: pointer;
+  display: none;
+}
+
+.todo:hover .removeIcon {
+  display: block;
+}
+
+/* Dark mode */
+
+.todo.dark {
+  background-color: hsl(237, 14%, 26%);
+}
+
+.todo.dark .todoText {
+  color: hsl(234, 39%, 85%);
+}

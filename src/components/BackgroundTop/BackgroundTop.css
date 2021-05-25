@@ -1,0 +1,14 @@
+.backgroundTop {
+  height: 30vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../images/bg-desktop-light.jpg");
+
+  transition: all 0.3s;
+}
+
+.backgroundTop.dark {
+  background-image: url("../../images/bg-desktop-dark.jpg");
+}

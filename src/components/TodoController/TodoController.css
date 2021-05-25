@@ -1,0 +1,80 @@
+.todoController {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  border-radius: 0 0 5px 5px;
+  color: hsl(236, 9%, 61%);
+  cursor: pointer;
+  flex-wrap: wrap;
+  height: 40px;
+  box-shadow: -1px 9px 23px -1px rgba(0, 0, 0, 0.1);
+
+  transition: all 0.3s;
+}
+
+.controller {
+  display: flex;
+  justify-content: space-between;
+}
+
+.controller > p {
+  padding-right: 12px;
+}
+
+.controller > p:hover {
+  color: hsl(235, 19%, 35%);
+}
+
+.active {
+  color: hsl(220, 98%, 61%);
+}
+
+.clearCompleted:hover {
+  color: hsl(235, 19%, 35%);
+}
+
+.todoController.dark {
+  background-color: hsl(237, 14%, 26%);
+  color: hsl(234, 39%, 85%);
+}
+
+.todo.dark .todoText {
+  color: hsl(234, 39%, 85%);
+}
+
+.todoController.dark .controller > p:hover {
+  color: white;
+}
+
+.todoController.dark .clearCompleted:hover {
+  color: white;
+}
+
+@media screen and (max-width: 466px) {
+  .todoController {
+    padding: 0;
+  }
+
+  .todoController > p {
+    padding: 10px;
+  }
+
+  .todoController .controller {
+    order: 1;
+    flex-basis: 100%;
+    margin: 30px 0;
+    padding: 15px 10px;
+    box-shadow: -1px 9px 23px -1px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 5px;
+    justify-content: space-around;
+  }
+
+  .todoController.dark .controller {
+    background-color: hsl(237, 14%, 26%);
+    color: hsl(234, 39%, 85%);
+  }
+}
